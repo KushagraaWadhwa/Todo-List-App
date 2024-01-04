@@ -1,0 +1,48 @@
+--- 
+app_info: 
+  app_desc: "A Kanban App to manage tasks effeciently and keep track of your todos!"
+  app_name: TODASTIC
+  debug: true
+  port: 8000
+  url: "http://127.0.0.1:8000"
+db: 
+  - 
+    connection: "sqlite:///test.db"
+  - 
+    columns: 
+      - 
+        t_id: "integer,primary_key=True"
+      - 
+        title: "string, nullable=False"
+      - 
+        desc: "string, nullable=False"
+      - 
+        created_at: "string, default=datetime.utcnow"
+      - 
+        complete: "string, default=False"
+paths: 
+  /dash: 
+    get: username
+  ? "/delete/<int:t_id>"
+  : 
+    description: "delete tasks"
+  ? "/progress/<int:t_id>"
+  : 
+    - 
+      description: 
+        - "edit progress of the tasks"
+  /summary: 
+    description: "show summary"
+  /taskform: 
+    post: "title,desc"
+  ? "/update/<int:t_id>"
+  : 
+    description: "update tasks"
+  ? "http://127.0.0.1:8000"
+  : 
+    post: username
+personal_info: 
+  contact: 7428739746
+  email_id: 21f3002930@student.onlinedegree.iitm.ac.in
+  name: "Kushagra Wadhwa"
+  roll_no: 21f3002930
