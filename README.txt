@@ -1,33 +1,29 @@
-Todoastic
-Welcome to My Kanban App called “TODOASTIC” which means (Todo+fantastic).
-It’s a very interesting application with a very intuitive welcome page.
-A very simple yet useful app to keep track of your data anywhere on the go.
-First, we have a homepage where you enter your name and log into the website, wherein at
-first you are shown a very beautiful welcome message and a link to proceed further into the
-website.
-Then there lands the main homepage of the website wherein you can add tasks by filling out
-the form and the tasks get added in a neatly managed table even showing the time they
-were created.
-Also, I have provided three buttons alongside every task allowing you to perform Update,
-Delete, and mark the task completed if you are done with the task.
-Technologies used
-• Flask for application code (Flask, SQL Alchemy)
-• Jinja2 templates + Bootstrap for HTML generation and styling
-• SQLite for data storage
-DB Schema Design
-4 columns: - SNo (Primary key as it uniquely identifies each tuple in the table), Title of the
-task (Cannot be null value), Description (Cannot be null value), Created at (Showing time
-and date at which the task was created)
-The reason I chose my database table to be this way is because this kind of table provides all
-the basic and needful information about the task.
-API Design
-I have created API’s for Updating tasks, deleting tasks and
-Checking the progress of the tasks in this application.
-Architecture and Features
-The main project folder consists of mainly 2 folders namely, templates, script. In templates
-folder I have created 7html files for the website functioning, which consists of a base
-html file and using jinja templates I have made other templates using base.html. “static”
-folder contains the image brand logo of the website. Addition to that there an app.py file
-which operates the main functioning of the app and where all the flask code is written.
-Also, there a db file named test.db which stores the data. The yaml files consists of the
-configuration of the app.
+
+TODOASTIC - Your Fantastic Kanban App
+
+Welcome to TODOASTIC, a simple and intuitive Kanban app designed to keep you organized on the go. Here's a brief overview:
+
+Features:
+
+User-Friendly Homepage: Log in, and a beautiful welcome message guides you to the main page.
+Task Management: Add tasks via a form, neatly displayed in a table with creation timestamps.
+Task Actions: Each task comes with buttons for Update, Delete, and Mark as Completed.
+Technologies Used:
+
+Flask (with SQL Alchemy) for the backend.
+Jinja2 templates + Bootstrap for HTML and styling.
+SQLite for data storage.
+Database Schema:
+
+Columns: SNo (Primary key), Title, Description, Created at.
+APIs:
+
+Update, delete, and check progress of tasks.
+Architecture:
+
+Main folders: templates, static, scripts.
+templates: 7 HTML files using Jinja templates, including a base HTML.
+static: Contains the website's brand logo.
+scripts: app.py for main functionality.
+test.db for data storage.
+Configuration in YAML files
