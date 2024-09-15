@@ -16,10 +16,8 @@ SQLite for data storage.
 Database Schema:
 
 Columns: SNo (Primary key), Title, Description, Created at.
-APIs:
+Functionalities: Update, delete, and check progress of tasks.
 
-Update, delete, and check progress of tasks.
-Architecture:
 
 Main folders: templates, static, scripts.
 templates: 7 HTML files using Jinja templates, including a base HTML.
